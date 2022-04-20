@@ -10,6 +10,7 @@ class DashboardViewModel(private val dashboardRepo: DashboardRepo) : BaseViewMod
     val error = MutableLiveData<Throwable>()
 
     val test1 = 0
+    val test2 = 0
 
     fun fetchListOfMovies() {
         val disposable =
