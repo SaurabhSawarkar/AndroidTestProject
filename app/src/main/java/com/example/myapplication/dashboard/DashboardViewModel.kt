@@ -9,6 +9,8 @@ class DashboardViewModel(private val dashboardRepo: DashboardRepo) : BaseViewMod
     val response = MutableLiveData<List<Results>>()
     val error = MutableLiveData<Throwable>()
 
+    val test1 = 0
+
     fun fetchListOfMovies() {
         val disposable =
             dashboardRepo.getListOfMovies("en-US", 1).observeOn(AppRxSchedulers.mainThread())
